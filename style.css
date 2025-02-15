@@ -116,6 +116,13 @@ main {
   font-size: 2vw;
 }
 
-#arrow i {
-  font-size: 2vw;
+#lens {
+  position: absolute;
+  top: 2.1%;
+  right: 2%;
+}
+
+#lens i {
+  font-size: 20px;
+  font-weight: 500;
 }
