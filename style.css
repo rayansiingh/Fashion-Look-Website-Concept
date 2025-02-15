@@ -27,27 +27,64 @@ main {
   background-color: rgb(212, 215, 222);
   display: grid;
   grid-template-columns: 25% 25% 50%;
-  grid-template-rows: 30% 50% 20%;
+  grid-template-rows: 30% 55% 15%;
 }
 
 #left-topLeft {
-  background-color: blue;
+  padding: 20px 25px;
+}
+
+#diamond {
+  height: 15px;
+  width: 15px;
+  background-color: black;
+  border-radius: 1.5px;
+  rotate: 45deg;
 }
 
 #left-topRight {
-  background-color: red;
+  padding: 20px 25px;
+  justify-self: end;
+  text-align: right;
+}
+
+#left-topRight h4 {
+  margin-bottom: 50px;
+  font-size: 18px;
+  font-weight: 600;
+  color: rgb(34, 34, 34);
+}
+
+#left-topRight h5 {
+  font-size: 15px;
+  font-weight: 600;
+  color: rgb(34, 34, 34);
 }
 
 #left-centre {
-  background-color: purple;
   grid-row: 2 / 3;
   grid-column: 1 / 3;
+  padding: 1.5vw 2.5vw;
+}
+
+#left-centre h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 6.5vw;
+  font-weight: 200;
+  line-height: 5.8vw;
+}
+
+#left-centre h1:nth-child(2n) {
+  text-align: center;
 }
 
 #left-bottom {
-  background-color: greenyellow;
   grid-row: 3 / 4;
   grid-column: 1 / 3;
+  padding: 1vw 2.5vw;
+  line-height: 0.6vw;
+  font-weight: 500;
+  font-size: 1.1vw;
 }
 
 #right {
